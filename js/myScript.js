@@ -1,4 +1,4 @@
 jQuery(document).ready(function($) {
     // Votre code ici avec les appels à la fonction $()
-    $("#content").html("bonjour");
+    $("#content").load("includes/galerie.html");
  });
