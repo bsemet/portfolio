@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
     $('#awork').click(function(){
         $("#content3").fadeOut(300);
         $("#content2").fadeOut(300, function() {
+            $("footer").fadeIn(300);
             $("#content1").fadeIn(300, function(){
 
                 $('.card').on( "click", function() {
@@ -40,13 +41,10 @@ jQuery(document).ready(function($) {
     });
     
     $('#askills').click(function(){
+        $("footer").fadeOut(300);
         $(".workdiv").fadeOut(300, function() {
             $("#content2").fadeIn(300);
         });
+        
     });
-    
-    
-
-
  });
-
