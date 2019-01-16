@@ -3,10 +3,10 @@ jQuery(document).ready(function($) {
     $("#content1").load("includes/work.html");
     $("#content2").load("includes/skills.html");
 
-    //$("#content1").hide();
+    $("#content1").hide();
     $("#content2").hide();
     $("#content3").hide();
-    $("#awork").addClass("linkactive");
+    
 
 
     $('#awork').click(function(){
@@ -53,4 +53,6 @@ jQuery(document).ready(function($) {
         });
         
     });
+
+    $("#awork").click();
  });
