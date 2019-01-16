@@ -3,11 +3,15 @@ jQuery(document).ready(function($) {
     $("#content1").load("includes/work.html");
     $("#content2").load("includes/skills.html");
 
-    $("#content1").hide();
+    //$("#content1").hide();
     $("#content2").hide();
     $("#content3").hide();
+    $("#awork").addClass("linkactive");
+
 
     $('#awork').click(function(){
+        $("#awork").addClass("linkactive");
+        $("#askills").removeClass("linkactive");
         $("#content3").fadeOut(300);
         $("#content2").fadeOut(300, function() {
             $("footer").fadeIn(300);
@@ -41,6 +45,8 @@ jQuery(document).ready(function($) {
     });
     
     $('#askills').click(function(){
+        $("#askills").addClass("linkactive");
+        $("#awork").removeClass("linkactive");
         $("footer").fadeOut(300);
         $(".workdiv").fadeOut(300, function() {
             $("#content2").fadeIn(300);
