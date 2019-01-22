@@ -83,18 +83,42 @@
 }
 
  /*---------------------------------SKILLS-------------------------------*/
- #containerskills {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 #containerskills div{
-  text-align: center;
+  font-size: 120%;
   color : grey;
+}
+
+#containerskills .row{
   margin-top: 1%;
   margin-bottom: 1%;
-  font-size: 170%;
+}
+
+#containerskills .leftcol{
+  font-size: 250%;
+}
+
+#containerskills .midcol{
+  padding-top: 0.5%;
+}
+
+#logoBootstrap{
+  width: 2.7rem;
+  height: 2.7rem;
+}
+#logoJquery{
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.fa-angular{
+  color : #dd0031;
+}
+.fa-css3-alt{
+  color : #1572b6;
+}
+.fa-js{
+  color : #f7df1e;
+}
+.fa-sass{
+  color : #cd6799;
 }

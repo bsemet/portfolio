@@ -49,10 +49,16 @@ jQuery(document).ready(function($) {
         $("#awork").removeClass("linkactive");
         $("footer").fadeOut(300);
         $(".workdiv").fadeOut(300, function() {
-            $("#content2").fadeIn(300);
+            $("#content2").fadeIn(300, function(){
+                $(".midcol").hover(function() {
+                    /* TO DO */
+                });
+            });
         });
         
     });
 
     $("#awork").click();
+    
+    
  });
