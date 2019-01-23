@@ -86,7 +86,7 @@
 
 #containerskills div{
   font-size: 120%;
-  color : grey;
+  color:grey;
 }
 
 #containerskills .row{
@@ -102,14 +102,12 @@
   padding-top: 0.5%;
 }
 
-#logoBootstrap{
+
+.logoSize{
   width: 2.7rem;
   height: 2.7rem;
 }
-#logoJquery{
-  width: 2.7rem;
-  height: 2.7rem;
-}
+
 .fa-angular{
   color : #dd0031;
 }
@@ -121,4 +119,8 @@
 }
 .fa-sass{
   color : #cd6799;
+}
+
+th {
+  text-align: center;   
 }
