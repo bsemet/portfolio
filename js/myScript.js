@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     //$("#content").load("includes/galerie.html");
     $("#content1").load("includes/work.html");
     $("#content2").load("includes/skills.html");
@@ -6,26 +6,25 @@ jQuery(document).ready(function($) {
     $("#content1").hide();
     $("#content2").hide();
     $("#content3").hide();
-    
 
 
-    $('#awork').click(function(){
+
+    $('#awork').click(function () {
         $("#awork").addClass("linkactive");
         $("#askills").removeClass("linkactive");
         $("#content3").fadeOut(300);
-        $("#content2").fadeOut(300, function() {
-            $("footer").fadeIn(300);
-            $("#content1").fadeIn(300, function(){
+        $("#content2").fadeOut(300, function () {
+            $("#content1").fadeIn(300, function () {
 
-                $('.card').on( "click", function() {
-                    switch ($(this).attr("id")){
-                        case "1" :
+                $('.card').on("click", function () {
+                    switch ($(this).attr("id")) {
+                        case "1":
                             $("#content3").load("includes/gals/chester.html");
-                            $("#content1").fadeOut(300, function() {
+                            $("#content1").fadeOut(300, function () {
                                 $("#content3").fadeIn(300);
                             });
-                            
-                        break;
+
+                            break;
                         case "2":
 
                     }
@@ -41,24 +40,23 @@ jQuery(document).ready(function($) {
                 });
             });
         });
-        
+
     });
-    
-    $('#askills').click(function(){
+
+    $('#askills').click(function () {
         $("#askills").addClass("linkactive");
         $("#awork").removeClass("linkactive");
-        $("footer").fadeOut(300);
-        $(".workdiv").fadeOut(300, function() {
-            $("#content2").fadeIn(300, function(){
-                $(".midcol").hover(function() {
+        $(".workdiv").fadeOut(300, function () {
+            $("#content2").fadeIn(300, function () {
+                $(".midcol").hover(function () {
                     /* TO DO */
                 });
             });
         });
-        
+
     });
 
     $("#awork").click();
-    
-    
- });
+
+
+});
