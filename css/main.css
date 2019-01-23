@@ -96,6 +96,7 @@
 
 #containerskills .leftcol{
   font-size: 250%;
+  padding-top: 0.25%;
 }
 
 #containerskills .midcol{
@@ -108,19 +109,53 @@
   height: 2.7rem;
 }
 
-.fa-angular{
-  color : #dd0031;
-}
-.fa-css3-alt{
-  color : #1572b6;
-}
-.fa-js{
-  color : #f7df1e;
-}
-.fa-sass{
-  color : #cd6799;
+.fa-angular{ color : #dd0031;}
+.fa-css3-alt{ color : #1572b6;}
+.fa-js{ color : #f7df1e;}
+.fa-sass{ color : #cd6799;}
+
+#containerskills .table th{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
-th {
-  text-align: center;   
+/*********************************** percentages ******************************* */
+
+svg.radial-progress {
+  height: auto;
+  width: 3.1rem;
+  transform: rotate(-90deg);
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; 
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+
+svg.radial-progress text {
+  fill: black;
+  text-anchor: middle;
+  font-size: 1.7rem;
+}
+/*couleurs*/
+svg.circle1 circle { stroke: #1572b6; }
+svg.circle2 circle { stroke: #cd6799; }
+svg.circle3 circle { stroke: #673ab7; }
+svg.circle4 circle { stroke: #f7df1e; }
+svg.circle5 circle { stroke: #1169ae; }
+svg.circle6 circle { stroke: #dd0031; }
+svg.circle7 circle { stroke: #00c8ff; }
+svg.circle8 circle { stroke: #ff7c00; }
+svg.circle9 circle { stroke: #787262; }
+
+/***********************hover on***************************/
+.hoverOn{
+  background-color: #f9f9f9;
 }
