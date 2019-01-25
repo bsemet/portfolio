@@ -4,8 +4,9 @@ jQuery(document).ready(function ($) {
         $("#askills").addClass("linkactive");
         $("#awork").removeClass("linkactive");
         $("#pageArticle").fadeOut(300, function () {
-            $("#gallerySlider").empty();
-            $("#galleryText").empty();
+            $('#pageArticle').find('div').each(function () {
+                $(this).empty();
+            });
         });
         $("#content").fadeOut(300, function () {
             $("#content").empty();

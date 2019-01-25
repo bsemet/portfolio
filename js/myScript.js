@@ -5,8 +5,9 @@ jQuery(document).ready(function ($) {
         $("#awork").addClass("linkactive");
         $("#askills").removeClass("linkactive");
         $("#pageArticle").fadeOut(300, function () {
-            $("#gallerySlider").empty();
-            $("#galleryText").empty();
+            $('#pageArticle').find('div').each(function () {
+                $(this).empty();
+            });
         });
         $("#content").fadeOut(300, function () {
             $("#content").empty();
@@ -21,10 +22,13 @@ jQuery(document).ready(function ($) {
                         case "1":
                             break;
                         case "3":
-                            $("#galleryText").empty();
-                            $("#galleryText").append("Ceci est une photo de chester");
-                            $("#gallerySlider").empty();
-                            $("#gallerySlider").append('<img class="thumb" src="img/chesteroml.jpg">')
+                            $('#pageArticle').find('div').each(function () {
+                                $(this).empty();
+                            });
+                            $("#galleryTitle").append("Chester");
+                            $("#galleryText").append('<div class="panel-body">Ceci est une photo de chester</div>');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/chesteroml.jpg">')
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/chesteroml.jpg">')
                             initGallery();
 
                             break;

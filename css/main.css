@@ -38,7 +38,14 @@
     height: 40vh;
     object-fit: cover;
 }
- /*---------------------------------LIENS-------------------------------*/
+
+.table th{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/*---------------------------------LIENS-------------------------------*/
 .logotop{
   text-align: center;
   color : grey;
@@ -113,11 +120,8 @@
 .fa-css3-alt{ color : #1572b6;}
 .fa-js{ color : #f7df1e;}
 .fa-sass{ color : #cd6799;}
-
-#containerskills .table th{
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
+.hoverOn{
+  background-color: #f9f9f9;
 }
 
 /*********************************** percentages ******************************* */
@@ -155,7 +159,15 @@ svg.circle7 circle { stroke: #00c8ff; }
 svg.circle8 circle { stroke: #ff7c00; }
 svg.circle9 circle { stroke: #787262; }
 svg.circle10 circle { stroke: #162471; }
-/***********************hover on***************************/
-.hoverOn{
-  background-color: #f9f9f9;
+
+/*********************** Article ***************************/
+
+.thumb{
+  max-width: 48%;
+  margin-right:0.5%;
+  margin-left: 0.5%;
+}
+
+#gallerySlider{
+  width:100%;
 }
