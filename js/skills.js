@@ -3,7 +3,10 @@ jQuery(document).ready(function ($) {
     $('#askills').click(function () {
         $("#askills").addClass("linkactive");
         $("#awork").removeClass("linkactive");
-
+        $("#pageArticle").fadeOut(300, function () {
+            $("#gallerySlider").empty();
+            $("#galleryText").empty();
+        });
         $("#content").fadeOut(300, function () {
             $("#content").empty();
             $("#content").load("includes/skills.html");
