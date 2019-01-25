@@ -171,3 +171,9 @@ svg.circle10 circle { stroke: #162471; }
 #gallerySlider{
   width:100%;
 }
+
+#galleryText{
+margin-top : 2%;
+max-width: 97%;
+margin-left:1.5%;
+}

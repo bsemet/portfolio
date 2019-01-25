@@ -26,15 +26,23 @@ jQuery(document).ready(function ($) {
                                 $(this).empty();
                             });
                             $("#galleryTitle").append("Chester");
-                            $("#galleryText").append('<div class="panel-body">Ceci est une photo de chester</div>');
+                            $("#galleryText").append('<div class="card-body">Ceci est une photo de Chester.</div>');
                             $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/chesteroml.jpg">')
                             $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/chesteroml.jpg">')
                             initGallery();
-
                             break;
 
                     }
-                    $("#pageArticle").fadeIn(300);
+                    $("#pageArticle").fadeIn(300, function(){
+                        $(".thumb").on({
+                            mouseenter: function () {
+                                $(this).css("opacity", "0.7")
+                            },
+                            mouseleave: function () {
+                                $(this).css("opacity", "1")
+                            }
+                        });
+                    });
                 });
 
                 $(".card").on({
