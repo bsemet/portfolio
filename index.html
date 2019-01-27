@@ -48,21 +48,25 @@
       </div>
     </section>
 
-    <div id="pageArticle" class="container">
-      <table class="table">
-        <thead>
-          <tr>
-            <th>
-              <div id="galleryTitle"></div>
-            </th>
-          </tr>
-        </thead>
-      </table>
+    <div id="pageArticle">
+      <button type="button" id="btnPageBack" class="btn" style="display:none;"><i class="fas fa-angle-double-left"></i> Back</button>
+      <div id="containerArticle" class="container">
+        <table id="tableArticle" class="table" style="display:none;">
+          <thead>
+            <tr>
+              <th>
+                <div id="galleryTitle"></div>
+              </th>
+            </tr>
+          </thead>
+        </table>
 
-      <div id="gallerySlider" class="text-center" media="slider"></div>
-      <div id="galleryText" class="card"></div>
+
+        <div id="gallerySlider" class="text-center" media="slider"></div>
+        <div id="galleryText" class="card"></div>
+        <div id="galleryTech" class=""></div>
+      </div>
     </div>
-    
     <div id="content"></div>
 
   </main>
@@ -77,7 +81,7 @@
 
   <script src="js/jQuery.js"></script>
   <script src="js/myScript.js"></script>
-  <script src="js/jsgallery.min.js"></script>
+  <script src="js/jsgallery.js"></script>
   <script src="js/skills.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
     crossorigin="anonymous">

@@ -163,9 +163,15 @@ svg.circle10 circle { stroke: #162471; }
 /*********************** Article ***************************/
 
 .thumb{
-  max-width: 48%;
+  max-width: 98%;
   margin-right:0.5%;
   margin-left: 0.5%;
+}
+
+@media (min-width: 768px) {
+  .thumb {
+    max-width: 48%;
+  }
 }
 
 #gallerySlider{
@@ -173,9 +179,36 @@ svg.circle10 circle { stroke: #162471; }
 }
 
 #galleryText{
-margin-top : 2%;
-max-width: 97%;
-margin-left:1.5%;
+  margin-top : 2%;
+  max-width: 97%;
+  margin-left:1.5%;
+  cursor:default;
+}
+#galleryTech{
+  margin-top : 2%;
+  max-width: 97%;
+  margin-left:1.5%;
+  text-align: center;
+  color: grey;
 }
 
-/*  TO DO : CORRECT THE VIEW ON A MOBILE VIEW (ONLY ONE COLUMN)  */
+#containerArticle{
+  width:100%;
+  position:relative;
+}
+
+#btnPageBack{
+  margin-top : 0.6em;
+  position:absolute;
+  color: grey;
+  width: 5em;
+  background-color:#e9ecef;
+  border: 1px solid #e9ecef;
+  z-index: 10;
+  border-radius: 0 7px 7px 0;
+  box-shadow: none;
+}
+#btnPageBack:hover{
+  background-color: white;
+  border: 1px solid grey;
+}
