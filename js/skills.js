@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
    
     $('#askills').click(function () {
+        $(".jsgallery-container").remove();
         $("#askills").addClass("linkactive");
         $("#awork").removeClass("linkactive");
         $("#pageArticle").fadeOut(300, function () {

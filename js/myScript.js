@@ -3,6 +3,7 @@ jQuery(document).ready(function ($) {
     $("#pageArticle").hide();
     $("#content").load("includes/work.html");
     $('#awork').click(function () {
+        $(".jsgallery-container").remove();
         $("#awork").addClass("linkactive");
         $("#askills").removeClass("linkactive");
         $("#pageArticle").fadeOut(300, function () {
@@ -10,6 +11,7 @@ jQuery(document).ready(function ($) {
                 $(this).empty();
             });
         });
+        
         $("#content").fadeOut(300, function () {
             $("#content").empty();
             $("#content").load("includes/work.html");

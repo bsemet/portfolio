@@ -149,7 +149,6 @@ $(function() {
     
 	
 $.fn.jsgallery = function(optionsOrMethod) {
-			console.log("bonjour");
 			var newDiv = $('<div></div>').addClass("jsgallery-container");
 			$("body").append(newDiv);
 
