@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
                 $(this).empty();
             });
         });
-        
+
         $("#content").fadeOut(300, function () {
             $("#content").empty();
             $("#content").load("includes/work.html");
@@ -21,7 +21,6 @@ jQuery(document).ready(function ($) {
                     $("#content").fadeOut(300, function () {
                         $("#content").empty();
                     });
-
 
                     switch ($(this).attr("id")) {
                         case "1":
@@ -56,8 +55,8 @@ jQuery(document).ready(function ($) {
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Illustrator, Photoshop, Cinema4D');
                             initGallery();
                             break;
-
                     }
+
                     $("#btnPageBack").removeAttr('style');
                     $("#tableArticle").removeAttr('style');
                     $("#pageArticle").fadeIn(300, function () {
@@ -70,9 +69,7 @@ jQuery(document).ready(function ($) {
                                 $(this).css("opacity", "1")
                             }
                         });
-                        $("#btnPageBack").on("click", function () {
-                            $("#awork").click();
-                        })
+
                     });
 
                 });
@@ -89,7 +86,9 @@ jQuery(document).ready(function ($) {
         });
 
     });
-
+    $("#btnPageBack").on("click", function () {
+        $("#awork").click();
+    })
     $("#awork").click();
 
     function initGallery() {
