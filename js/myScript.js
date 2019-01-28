@@ -89,6 +89,11 @@ jQuery(document).ready(function ($) {
     $("#btnPageBack").on("click", function () {
         $("#awork").click();
     })
+
+    $('#btt').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    });
+
     $("#awork").click();
 
     function initGallery() {
