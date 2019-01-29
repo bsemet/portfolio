@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
     $('#awork').click(function () {
         $(".jsgallery-container").remove();
         $("#awork").addClass("linkactive");
+        $("#aprofile").removeClass("linkactive");
         $("#askills").removeClass("linkactive");
         $("#pageArticle").fadeOut(300, function () {
             $('#containerArticle').find('div').each(function () {
@@ -93,7 +94,7 @@ jQuery(document).ready(function ($) {
                             });
                             $("#galleryTitle").append("Groen");
                             $("#galleryText").append('<div class="card-body">Groen is the Belgian ecological political party for Flanders. </br>'
-                                + "I know some people working there and sometimes I helped them create some banners for their social media events, like the one above. </div>");
+                                + "I know some people working there and sometimes I help them create some banners for their social media events, like the one above. </div>");
                             $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb groen" src="img/work/groen/groen8.jpg">');
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Photoshop');
                             initGallery();

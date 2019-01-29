@@ -228,3 +228,35 @@ svg.circle10 circle { stroke: #162471; }
   color: red;
   font-size: 2rem;
 }
+
+ /*---------------------------------PROFILE-------------------------------*/
+
+ .rowprofile .row div{
+  font-size: 120%;
+  color:grey;
+  text-align: center;
+}
+
+#containerProfile .row{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#containerProfile .leftcol{
+  padding-top: 0.25%;
+}
+
+#containerProfile .midcol{
+  padding-top: 0.5%;
+}
+
+.hoverOn{
+  background-color: #f9f9f9;
+}
+.tableprofile{
+  margin-top: 5%;
+}
+
+#imgprofile{
+  max-height: 20.2rem;
+}
