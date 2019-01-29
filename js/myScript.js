@@ -87,6 +87,31 @@ jQuery(document).ready(function ($) {
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Illustrator');
                             initGallery();
                             break;
+                            case "5":
+                            $('#containerArticle').find('div').each(function () {
+                                $(this).empty();
+                            });
+                            $("#galleryTitle").append("Groen");
+                            $("#galleryText").append('<div class="card-body">Groen is the Belgian ecological political party for Flanders. </br>'
+                                + "I know some people working there and sometimes I helped them create some banners for their social media events, like the one above. </div>");
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb groen" src="img/work/groen/groen8.jpg">');
+                            $("#galleryTech").append('<i class="fas fa-tools"></i> Photoshop');
+                            initGallery();
+                            break;
+                            case "6":
+                            $('#containerArticle').find('div').each(function () {
+                                $(this).empty();
+                            });
+                            $("#galleryTitle").append("Your Sounds");
+                            $("#galleryText").append('<div class="card-body">Your Sounds is a Youtube channel that I created in order to practice my skills on Cinema4D.</br>'
+                                +'I was posting musics that I liked with some animations following the music beat. '
+                                + "Today the channel is not active but the videos are still available on Youtube. </br>"
+                                +"Here is a link to the channel : <a rel='noopener noreferrer' target='_blank' href='https://www.youtube.com/channel/UC_884uSbHpDYJ4Z9POFujMA'><i class='fab fa-youtube-square'></i></div>");
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/ys/yoursounds2.jpg">');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/ys/yoursounds1.jpg">');
+                            $("#galleryTech").append('<i class="fas fa-tools"></i> Cinema 4D');
+                            initGallery();
+                            break;
                     }
 
                     $("#btnPageBack").removeAttr('style');
