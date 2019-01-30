@@ -45,6 +45,18 @@
   font-weight: 600;
 }
 
+#maintitle{
+  height: 5em;
+  width:auto;
+  margin-bottom: 3%;
+}
+
+@media (max-width: 400px) {
+  #maintitle {
+    height: 2.5em;
+  }
+}
+
 /*---------------------------------LIENS-------------------------------*/
 #containerLogos{
   text-align: center;
