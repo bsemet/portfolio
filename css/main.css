@@ -46,8 +46,11 @@
 }
 
 /*---------------------------------LIENS-------------------------------*/
-.logotop{
+#containerLogos{
   text-align: center;
+}
+
+.logotop{
   color : grey;
   font-size: 150%;
   margin-right: 2%;
@@ -258,5 +261,5 @@ svg.circle10 circle { stroke: #162471; }
 }
 
 #imgprofile{
-  max-height: 20.2rem;
+  max-width: 80%
 }
