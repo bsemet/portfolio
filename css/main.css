@@ -263,3 +263,34 @@ svg.circle10 circle { stroke: #162471; }
 #imgprofile{
   max-width: 80%
 }
+
+/***************MOBILE BTT*******************/
+#mobileBtt{
+  text-align: center;
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.5em; 
+  color: white;
+  background-color:grey;
+  z-index: 10;
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+#fixedbutton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px; 
+}
+
+@media (min-width: 768px) {
+  #mobileBtt {
+    display:none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display:none;
+  }
+}

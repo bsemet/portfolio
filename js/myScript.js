@@ -88,7 +88,7 @@ jQuery(document).ready(function ($) {
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Illustrator');
                             initGallery();
                             break;
-                            case "5":
+                        case "5":
                             $('#containerArticle').find('div').each(function () {
                                 $(this).empty();
                             });
@@ -99,15 +99,15 @@ jQuery(document).ready(function ($) {
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Photoshop');
                             initGallery();
                             break;
-                            case "6":
+                        case "6":
                             $('#containerArticle').find('div').each(function () {
                                 $(this).empty();
                             });
                             $("#galleryTitle").append("Your Sounds");
                             $("#galleryText").append('<div class="card-body">Your Sounds is a Youtube channel that I created in order to practice my skills on Cinema4D.</br>'
-                                +'I was posting musics that I liked with some animations following the music beat. '
+                                + 'I was posting musics that I liked with some animations following the music beat. '
                                 + "Today the channel is not active but the videos are still available on Youtube. </br>"
-                                +"Here is a link to the channel : <a rel='noopener noreferrer' target='_blank' href='https://www.youtube.com/channel/UC_884uSbHpDYJ4Z9POFujMA'><i class='fab fa-youtube-square'></i></div>");
+                                + "Here is a link to the channel : <a rel='noopener noreferrer' target='_blank' href='https://www.youtube.com/channel/UC_884uSbHpDYJ4Z9POFujMA'><i class='fab fa-youtube-square'></i></div>");
                             $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/ys/yoursounds2.jpg">');
                             $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/ys/yoursounds1.jpg">');
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Cinema 4D');
@@ -149,6 +149,10 @@ jQuery(document).ready(function ($) {
     })
 
     $('#btt').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    });
+
+    $('#mobileBtt').click(function () {
         $('html,body').animate({ scrollTop: 0 }, 500);
     });
 
