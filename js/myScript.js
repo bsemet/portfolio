@@ -113,6 +113,24 @@ jQuery(document).ready(function ($) {
                             $("#galleryTech").append('<i class="fas fa-tools"></i> Cinema 4D');
                             initGallery();
                             break;
+                        case "7":
+                            $('#containerArticle').find('div').each(function () {
+                                $(this).empty();
+                            });
+                            $("#galleryTitle").append("Wallpapers");
+                            $("#galleryText").append('<div class="card-body">I love creating images about things I like. '
+                                + "This is why I created many wallpapers/banners for myself and for friends. </br>"
+                                + "Most of them are related to TV series or music artists</br>"
+                               +"</div>");
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/wallpapers/breaking.jpg">');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/wallpapers/savant.jpg">');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/wallpapers/worakls.jpg">');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/wallpapers/rammstein.jpg">');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/wallpapers/twd.jpg">');
+                            $("#gallerySlider").append('<img class="img-fluid img-thumbnail thumb" src="img/work/wallpapers/daenerys.jpg">');
+                            $("#galleryTech").append('<i class="fas fa-tools"></i> GIMP, Photoshop');
+                            initGallery();
+                            break;
                     }
 
                     $("#btnPageBack").removeAttr('style');
